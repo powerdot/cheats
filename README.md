@@ -148,10 +148,10 @@ console.log(x.length, x[0]); // -> 3, "привет"
 ```js
 var array = ["привет", 'как дела', 'что делаешь'];
 var search = "как дела";
-if( array.includes(s) ){ // <- ищем через .includes
-    console.log("массив содержит:", s); // -> "массив содержит: как дела"
+if( array.includes(search) ){ // <- ищем через .includes
+    console.log("массив содержит:", search); // -> "массив содержит: как дела"
 }else{
-    console.log("массив x НЕ содержит", s);
+    console.log("массив x НЕ содержит", search);
 }
 ```
 

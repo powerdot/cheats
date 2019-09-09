@@ -167,9 +167,11 @@ console.log(array); // -> ["привет", "как дела", "что делае
 ```js
 var array = [3,4,5,6,7,8];
 var sum = 0;
+
 for(var i=0; i<array.length; i++){
     sum += array[i];
 }
+
 console.log("ср. арифм:", sum/array.length);
 ```
 
@@ -178,14 +180,12 @@ console.log("ср. арифм:", sum/array.length);
 var array = [3,678,3,24,6,7,3,2,3,4023,3,-45,-3,43,23,-454,312,34,3454];
 var min = array[0];
 var max = array[0];
+
 for(var i = 0 ; i < array.length; i++){
-	console.log('current:', array[i]);
 	if(array[i] < min){
-    	console.log("array[i] < min", array[i], min);
 		min = array[i];
 	}
-    if(array[i] > max){
-    	console.log("array[i] > max", array[i], max);
+	if(array[i] > max){
 		max = array[i];
 	}
 }

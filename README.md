@@ -161,3 +161,47 @@ var array = ["привет", 'как дела', 'что делаешь'];
 array.push('кек');
 console.log(array); // -> ["привет", "как дела", "что делаешь", "kek"]
 ```
+
+## Готовые программки
+### Поиск среднего арифметического
+```js
+var array = [3,4,5,6,7,8];
+var sum = 0;
+for(var i=0; i<array.length; i++){
+    sum += array[i];
+}
+console.log("ср. арифм:", sum/array.length);
+```
+
+### Поиск минимального и максимального числа
+```js
+var array = [3,678,3,24,6,7,3,2,3,4023,3,-45,-3,43,23,-454,312,34,3454];
+var min = array[0];
+var max = array[0];
+for(var i = 0 ; i < array.length; i++){
+	console.log('current:', array[i]);
+	if(array[i] < min){
+    	console.log("array[i] < min", array[i], min);
+		min = array[i];
+	}
+    if(array[i] > max){
+    	console.log("array[i] > max", array[i], max);
+		max = array[i];
+	}
+}
+
+console.log('my min:', min, 'my max:', max);
+```
+
+### Умное отображение лайков
+```js
+var names = ["илья"];
+var res = "еще никто не лайкнул твой пост =(";
+
+if(names.length == 1) res = names[0]+ ' лайкнул твой пост';
+if(names.length == 2) res = names[0]+ ' и ' + names[1]+ ' лайкнули твой пост';
+if(names.length == 3) res = names[0]+ ', ' + names[1]+ ' и ' + names[2] + ' лайкнули твой пост';
+if(names.length > 3) res = names[0]+ ' и еще ' + (names.length - 1) + ' человека лайкнули твой пост';
+
+console.log(res);
+```

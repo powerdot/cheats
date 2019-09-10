@@ -94,6 +94,9 @@ var new_array = array.filter(x=> x.wow ); // x.wow означает, что x.wo
 // а теперь ищем там же пиздюков до 18 лет
 var young = array.filter(x=> x.age<18 );
 
+// а теперь найдем пиздюков, которые "wow"
+var young_wowed = array.filter(x=> x.age<18 ).filter(x=> x.wow );
+//                          сортируем по возрасту, а потом по wow
 ```
 
 В итоге в **new_array**:
@@ -111,5 +114,12 @@ var young = array.filter(x=> x.age<18 );
   {name: "илья", age: 17, wow: false},
   {name: "олег", age: 14, wow: true},
   {name: "сергей", age: 12, wow: false}
+]
+```
+
+В итоге в **young_wowed**:
+```js
+[
+  {name: "олег", age: 14, wow: true}
 ]
 ```

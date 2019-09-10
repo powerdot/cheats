@@ -89,7 +89,7 @@ var array = [
 var new_array = array.filter(x=>x.wow==true);
 
 // или еще короче
-var new_array = array.filter(x=>x.wow);
+var new_array = array.filter(x=>x.wow); // x.wow означает, что x.wow "существует", если было бы false, то его бы "не существовало бы"
 ```
 
 В итоге в **new_array**:

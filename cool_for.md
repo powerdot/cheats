@@ -75,13 +75,13 @@ for(var element of array){
 Пример:
 ```js
 var array = [
-  {name: "глеб", wow: false},
-  {name: "илья", wow: false},
-  {name: "алекс", wow: true},
-  {name: "кирилл", wow: false},
-  {name: "олег", wow: true},
-  {name: "никита", wow: true},
-  {name: "сергей", wow: false},
+  {name: "глеб", age: 34, wow: false},
+  {name: "илья", age: 17, wow: false},
+  {name: "алекс", age: 33, wow: true},
+  {name: "кирилл", age: 53, wow: false},
+  {name: "олег", age: 14, wow: true},
+  {name: "никита", age: 23, wow: true},
+  {name: "сергей", age: 12, wow: false},
 ]
 
 // Формируем новый массив, который состоит исключительно из элементов с wow: true
@@ -90,13 +90,26 @@ var new_array = array.filter(x=>x.wow==true);
 
 // или еще короче
 var new_array = array.filter(x=>x.wow); // x.wow означает, что x.wow "существует", то есть все-что угодно кроме false
+
+// а теперь ищем там же пиздюков до 18 лет
+var young = array.filter(x=>x.age<18);
+
 ```
 
 В итоге в **new_array**:
 ```js
 [
-  {name: "алекс", wow: true}
-  {name: "олег", wow: true},
-  {name: "никита", wow: true}
+  {name: "алекс", age: 33, wow: true},
+  {name: "олег", age: 14, wow: true},
+  {name: "никита", age: 23, wow: true}
+]
+```
+
+В итоге в **young**:
+```js
+[
+  {name: "илья", age: 17, wow: false},
+  {name: "олег", age: 14, wow: true},
+  {name: "сергей", age: 12, wow: false}
 ]
 ```

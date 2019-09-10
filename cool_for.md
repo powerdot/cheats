@@ -96,7 +96,9 @@ var young = array.filter(x=> x.age<18 );
 
 // а теперь найдем пиздюков, которые "wow"
 var young_wowed = array.filter(x=> x.age<18 ).filter(x=> x.wow );
-//                          сортируем по возрасту, а потом по wow
+//                            фильтр по возрасту, а потом по wow
+// или короче
+var young_wowed = array.filter(x=> x.age<18 && x.wow );
 ```
 
 В итоге в **new_array**:

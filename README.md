@@ -234,3 +234,37 @@ if(names.length > 3) res = names[0]+ ' и еще ' + (names.length - 1) + ' че
 
 console.log(res);
 ```
+
+### Поиск квартир
+```js
+var array = [
+  {street: 'ул. Боярская', house: '22к3', room: '202', size: 60, price: 8000000},
+  {street: 'ул. Тысячичертеская', house: '15', room: '56', size: 45, price: 5000000},
+  {street: 'ул. Эполпарковская', house: '1c4', room: '11', size: 75, price: 15000000},
+  {street: 'ул. Глебовская', house: '6', room: '2', size: 70, price: 20000000},
+  {street: 'ул. Илюшинская', house: '34', room: '7', size: 69, price: 18000000},
+  {street: 'ул. Алексовская', house: '31', room: '53', size: 53, price:6000000},
+  {street: 'ул. Мемасная', house: '14', room: '88', size: 23, price: 3000000},
+  {street: 'ул. Навальновская', house: '3с2', room: '24', size: 94, price: 12000000},
+  {street: 'ул. Собянинская', house: '6с3', room: '64', size: 68, price: 4900000},
+  {street: 'ул. Спбшная', house: '5', room: '55', size: 85, price: 25000000},
+  {street: 'ул. Кальянная', house: '7к4', room: '44', size: 66, price: 9000000},
+  {street: 'ул. Гейпарадная', house: '3', room: '23', size: 25, price: 2000000},
+  {street: 'ул. Первонаховская', house: '11с1', room: '3', size: 77, price: 50000000},
+];
+
+var search_size = 60;
+
+var found_rooms = array.filter(x=> x.size>=search_size);
+
+var price_sum = 0;
+
+for(var room of found_rooms){
+	price_sum += room.price;
+}
+
+var mid_price = price_sum / found_rooms.length;
+
+console.log( "Всего квартир размером больше или равно " + search_size + " км.м: " + found_rooms.length );
+console.log( "Средняя стоимость этих квартир " + mid_price + " руб." );
+```

@@ -149,6 +149,7 @@ while(i<5){
     i++;
 }
 ```
+[-> Читай: крутые циклы](https://github.com/powerdot/cheats/blob/master/cool_for.md)
 
 ### Четное & нечетное
 ```js

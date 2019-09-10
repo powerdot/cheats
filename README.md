@@ -138,6 +138,9 @@ console.log( a!=b ? "a НЕ равно b" : "a равно b" ); // -> a НЕ р�
 ```
 
 ### Циклы
+
+[-> Читай: крутые циклы](https://github.com/powerdot/cheats/blob/master/cool_for.md)
+
 ```js
 // for от 0 до 4 (0,1,2,3,4)
 for(var i=0; i<5; i++){ ... }
@@ -151,7 +154,6 @@ while(i<5){
     i++;
 }
 ```
-[-> Читай: крутые циклы](https://github.com/powerdot/cheats/blob/master/cool_for.md)
 
 ### Четное & нечетное
 ```js

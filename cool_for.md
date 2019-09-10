@@ -86,10 +86,10 @@ var array = [
 
 // Формируем новый массив, который состоит исключительно из элементов с wow: true
 // ТОБИШЬ ФИЛЬТРУЕМ
-var new_array = array.filter(x=> x.wow==true );
+var wowed = array.filter(x=> x.wow==true );
 
 // или еще короче
-var new_array = array.filter(x=> x.wow ); // x.wow означает, что x.wow "существует", то есть все-что угодно кроме false
+var wowed = array.filter(x=> x.wow ); // x.wow означает, что x.wow "существует", то есть все-что угодно кроме false
 
 // а теперь ищем там же пиздюков до 18 лет
 var young = array.filter(x=> x.age<18 );
@@ -101,7 +101,7 @@ var young_wowed = array.filter(x=> x.age<18 ).filter(x=> x.wow );
 var young_wowed = array.filter(x=> x.age<18 && x.wow );
 ```
 
-В итоге в **new_array**:
+В итоге в **wowed**:
 ```js
 [
   {name: "алекс", age: 33, wow: true},

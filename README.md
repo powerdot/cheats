@@ -253,10 +253,9 @@ var array = [
   {street: 'ул. Гейпарадная', house: '3', room: '23', size: 25, price: 2000000},
   {street: 'ул. Первонаховская', house: '11с1', room: '3', size: 77, price: 50000000},
 ];
-
 var search_size = 60;
 
-var found_rooms = array.filter(x=> x.size>=search_size);
+var found_rooms = array.filter(x=> x.size>=search_size); // ищу хаты с нужным метражом
 
 var price_sum = 0;
 
@@ -264,7 +263,7 @@ for(var room of found_rooms){
 	price_sum += room.price;
 }
 
-var mid_price = price_sum / found_rooms.length;
+var mid_price = price_sum / found_rooms.length; // нахожу среднюю стоимость
 
 console.log( "Всего квартир размером больше или равно " + search_size + " км.м: " + found_rooms.length );
 console.log( "Средняя стоимость этих квартир " + mid_price + " руб." );

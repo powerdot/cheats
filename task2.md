@@ -1,6 +1,7 @@
 # Исправляем ошибки коллеги
 
 > Нужно использовать новомодный for(in/of)  
+
 > И .filter() в конце задания
 
 [-> Новомодные циклы и .filter()](https://github.com/powerdot/cheats/blob/master/cool_for.md)

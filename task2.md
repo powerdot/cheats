@@ -55,4 +55,4 @@ var colors = ["белый","белый","белый","белый","нига","б
 // -> Людей не трансов: 9
 ```
 
-(прогер желает удачи)[https://www.tupa-germania.ru/upload/docs/image1/750_450_x_center/145_image1.jpg]
+![прогер желает удачи](https://www.tupa-germania.ru/upload/docs/image1/750_450_x_center/145_image1.jpg)

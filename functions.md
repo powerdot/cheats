@@ -1,5 +1,7 @@
-```js
+# Использование функций
 
+### Как их создавать
+```js
 var myFunc = function(a, b){
     var x = a + b;
     return x;
@@ -14,6 +16,11 @@ var myFunc3 = (a,b)=>{
     var x = a*b+15;
     return x;
 }
+
+```
+
+### Примеры с arrow-functions
+```js
 
 var array = [
     {a:1},
@@ -33,9 +40,11 @@ console.log( array.filter((x)=>{
 console.log('result:', myFunc(4, 10) )
 console.log('result2:', myFunc2(4, 10) )
 console.log('result3:', myFunc3(4, 10) )
+```
 
-//////////
+### Простой пример использования функции 1
 
+```js
 function howMuchGays(human_amount){
     return (human_amount*0.25)+" gays"
 }
@@ -59,7 +68,11 @@ console.log( analysPeople(2133) )
 
 
 
-//////////
+```
+
+### Простой пример использования функции 2
+
+```js
 
 /**
 
@@ -82,7 +95,11 @@ console.log( analysPeople(2133) )
  console.log( sum )
 
 
- ///////////
+```
+
+### Простой пример использования функции 3 - Square
+
+```js
 
 
 /**
@@ -102,7 +119,11 @@ function square(a, b){
 }
 console.log(square(5,100))
 
-//////////
+```
+
+### Простой пример использования функции 4 - smartEncode
+
+```js
 
 
 /**
@@ -125,10 +146,6 @@ String.fromCharCode(...array)
 -> 1090
 
 */
-
-
-
-
 
 
 function stringCharCodes(a){
